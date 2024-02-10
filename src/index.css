@@ -1,13 +1,92 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root{
+  --maincolor:#2c3e50 ;
+  --secondrycolor:#1abc9c;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.bg-color{
+  background-color: var(--secondrycolor);
+}
+.navbar{
+  background-color:var(--maincolor) !important;
+  padding: 2%;
+  transition: padding 0.7s;
+}
+.scrolled {
+  padding: 0.5%;
+  transition: padding 0.7s;
+  
+}
+.navbar ul li .nav-link{
+  color: aliceblue;
+  font-weight: bold;
+}
+.activ{
+  background-color:var(--secondrycolor) !important;
+  border-radius: 10px;
+}
+.hr{
+  width: 80px;
+  height: 4px;
+  background-color: aliceblue;
+}
+.main-color{
+  color: var(--maincolor) !important;
+}
+.secondry-color{
+  color: var(--secondrycolor);
+}
+.bg{
+  background-color: var(--maincolor);
+}
+.footer{
+  background-color: var(--maincolor);
+}
+.row{
+  margin:0px;
+}
+p{
+  font-size: 16px;
+}
+.lable {
+  position: absolute;
+  top: 100px;
+  transition: all 1s;
+}
+.lable.show{
+  top: 10px;
+}
+input:focus{
+  box-shadow: none !important;
+}
+.pointer {
+  cursor: pointer;
+}
+.layer {
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  opacity: 0;
+  background-color: #1abc9ce6;
+  transition: all 1s;
+  
+}
+.image:hover .layer{
+  opacity: 1;
+}
+#boxContainer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1234566;
+  background-color: rgba(24, 25, 53, 0.473);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.innerBox{
+  width: 40%;
 }
